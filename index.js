@@ -1,3 +1,4 @@
+const Discord = require ("discord.js")
 var bot = new Discord.Client()
 var prefixbot = ("!")
 var GAME = 0

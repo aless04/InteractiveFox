@@ -15,6 +15,12 @@ bot.on("guildMemberAdd", member => {
   })
 })
 
+bot.on("guildMemberRemove", member => {
+  member.createDM().then(channel => {
+    return channel.send("**Tu es partit de notre Discord .. :cry:**\nNous éspérons te revoir bientôt ! :upside_down:(Sauf si on t'a **Ban** mdr)\nAurevoir " + member.toString() " ! :wave:")
+  })
+})
+
 bot.login(process.env.TOKEN)
 
 bot.on('message', message => {

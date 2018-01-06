@@ -16,7 +16,11 @@ bot.on("guildMemberAdd", member => {
 })
 
 bot.on("guildMemberRemove", member => {
- member.guild.channels.find("name", "general").sendMessage(member.toString() + " a quitté le serveur :cry: ")
+ member.guild.channels.find("name", "general").sendMessage(member.toString() + " a quitté le serveur .. :cry: ")
+})
+
+bot.on("guildMemberAdd", member => {
+ member.guild.channels.find("name", "general").sendMessage(member.toString() + " nous a rejoints ! :grinning:")
 })
 
 bot.login(process.env.TOKEN)

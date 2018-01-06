@@ -1,17 +1,17 @@
 const Discord = require ("discord.js")
-var Client = new Discord.Client()
+var bot = new Discord.Client()
 var prefixbot = ("!")
 var GAME = 0
 var hasard = 0
 var prefix = ("/")
 
-Client.on('ready', () => {
+bot.on('ready', () => {
     console.log("Bot prêt prêt à être utilisé !")
 })
 
-Client.login(process.env.TOKEN)
+bot.login(process.env.TOKEN)
 
-Client.on('message', message => {
+bot.on('message', message => {
     if(message.content == "Ping"){
         message.reply("Pong")
         console.log("ping pong")

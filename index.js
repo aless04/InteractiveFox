@@ -27,7 +27,7 @@ bot.on('message', message => {
         message.reply("Tu ne peut pas utiliser cette commande ici,\nessaye le salon espace-bot :wink: !")
     }
     if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 1)){
-        message.reply("Tu ne peut pas effecteur cette commande tant qu'une autre partie de *roulette* est en cours !")
+        message.reply("Tu ne peut pas effectuer cette commande tant qu'une autre partie de *roulette* est en cours !")
     }
     if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 0)){
         message.channel.sendMessage("C'est partit pour la roulette :raised_hands: !")

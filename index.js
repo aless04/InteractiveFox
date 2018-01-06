@@ -9,6 +9,12 @@ bot.on('ready', () => {
     console.log("Bot prêt prêt à être utilisé !")
 })
 
+bot.on('guildMemberAdd', member => {
+  member.createDM().then(channel => {
+    return channel.send("Bienvenue sur notre serveur Discord " + member.displayName +"! :grinning:\nPuisque tu es nouveau nous te conseillons d'effectuer la commande ```!help``` et de te rendre dans les salons textuels __regles__ et __annonce__.")
+  })
+})
+
 bot.login(process.env.TOKEN)
 
 bot.on('message', message => {

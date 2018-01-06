@@ -5,11 +5,11 @@ var GAME = 0
 var hasard = 0
 var prefix = ("/")
 
-bot.on('ready', () => {
+bot.on("ready", () => {
     console.log("Bot prêt prêt à être utilisé !")
 })
 
-bot.on('guildMemberAdd', member => {
+bot.on("guildMemberAdd", member => {
   member.createDM().then(channel => {
     return channel.send("**Bienvenue sur notre serveur Discord **" + member.toString() +"! :grinning:\nPuisque tu es nouveau, nous te conseillons d'effectuer la commande ``!help`` qui te permettra de voir toutes les commandes. :wink:\nLes deux salons textuels __regles__ et __annonce__ peuvent t'être très utiles pour comprendre le serveur. :busts_in_silhouette:\nNous éspérons que tu te sentiras bien dans notre serveur ! :grin:")
   })
@@ -19,12 +19,12 @@ bot.login(process.env.TOKEN)
 
 bot.on('message', message => {
     if(message.content == "Ping"){
-        message.reply("Pong")
-        console.log("ping pong")
+        message.reply("Pong :ping_pong:")
+        console.log("Ping Pong")
     }
     
     if(message.content == "ping"){
-        message.reply("pong")
+        message.reply("pong :ping_pong:")
         console.log("ping pong")
         }
 

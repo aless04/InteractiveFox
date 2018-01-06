@@ -20,6 +20,7 @@ Client.on('message', message => {
     if(message.content == "ping"){
         message.reply("pong")
         Console.log(message.user.name "ping pong")
+        }
         
 
     if(message.content == prefixbot + "help"){

@@ -19,7 +19,7 @@ Client.on('message', message => {
     
     if(message.content == "ping"){
         message.reply("pong")
-        Console.log("ping pong")
+        console.log("ping pong")
         }
 
     if(message.content == prefixbot + "help"){

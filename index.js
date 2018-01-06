@@ -37,7 +37,7 @@ bot.on('message', message => {
         }
 
     if(message.content == prefixbot + "help"){
-        message.channel.sendMessage("```Voici les commandes du bot:\n1.  !help   =>  afficher les commandes du bot.\n2.  !roulette   =>  jouer à la roulette (les règles sont éxpliquées une fois la commande efféctuée).```")
+        message.channel.sendMessage("```Voici les commandes du bot:\n1.  !help   =>  afficher les commandes du bot.\n2.  !roulette   =>  jouer à la roulette (les règles sont éxpliquées une fois la commande efféctuée).\n**----------** Les commandes sans **!** **----------**\n1.  (P/p)ing  =>  Le bot repond (P/p)ong :ping_pong:```")
         console.log("Help demandé")
     }
 

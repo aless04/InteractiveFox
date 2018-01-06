@@ -14,8 +14,13 @@ Client.login(process.env.TOKEN)
 Client.on('message', message => {
     if(message.content == "Ping"){
         message.reply("Pong")
-        console.log('ping pong')
+        console.log("ping pong")
     }
+    
+    if(message.content == "ping"){
+        message.reply("pong")
+        Console.log(message.user.name "ping pong")
+        
 
     if(message.content == prefixbot + "help"){
         message.channel.sendMessage("``Voici les commandes du bot:\n1.  !help   =>  afficher les commandes du bot.\n2.  !roulette   =>  jouer à la roulette (les règles sont éxpliquées une fois la commande efféctuée).``")

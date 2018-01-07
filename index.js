@@ -1,4 +1,29 @@
 const Discord = require ("discord.js")
+
+const embedhelp = {
+    "embed": {
+      "description": "\n**Voici toutes les commandes disponibles sur ce serveur Discord :**\n\n|``!help`` | Affiche le __Menu !help__ et toutes les autres commandes disponibles.|",
+      "color": 4886754,
+      "footer": {
+        "icon_url": "https://cdn.discordapp.com/embed/avatars/4.png",
+        "text": "Commande (!help)"
+      },
+      "author": {
+        "name": "Menu !help",
+        "icon_url": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "fields": [
+        {
+          "name": "\nCommandes avec |!| :",
+          "value": "\n1-  ``!roulette`` | **Pour jouer à la roulette (les règles sont éxpliquées une fois la commande efféctuée).**"
+        },
+        {
+          "name": "\nCommandes sans |!| :",
+          "value": "\n1-  ``(P/p)ing`` | **Le bot repond (P/p)ong. :ping_pong:**"
+        }
+      ]
+    }
+  }
 var bot = new Discord.Client()
 var prefixbot = ("!")
 var GAME = 0
@@ -7,6 +32,7 @@ var prefix = ("/")
 
 bot.on("ready", () => {
     console.log("Bot prêt prêt à être utilisé !")
+    bot.user.setGame("!help | Voir mes commandes")
 })
 
 bot.on("guildMemberAdd", member => {
@@ -23,7 +49,7 @@ bot.on("guildMemberAdd", member => {
  member.guild.channels.find("name", "general").sendMessage(member.toString() + " nous a rejoints ! :grinning:")
 })
 
-bot.login(process.env.TOKEN)
+bot.login("Mzk4NDYyMTQ2ODg0NjY1MzU1.DTFt0w.zql0b8Kbfp-X0ncJaiFvopsKh2Q")
 
 bot.on('message', message => {
     if(message.content == "Ping"){
@@ -37,7 +63,7 @@ bot.on('message', message => {
         }
 
     if(message.content == prefixbot + "help"){
-        message.channel.sendMessage("```Voici les commandes du bot:\n1.  !help   =>  afficher les commandes du bot.\n2.  !roulette   =>  jouer à la roulette (les règles sont éxpliquées une fois la commande efféctuée).\n**----------** Les commandes sans |!| **----------**\n1.  (P/p)ing  =>  Le bot repond (P/p)ong```")
+        message.channel.sendMessage(embedhelp)
         console.log("Help demandé")
     }
 
@@ -69,4 +95,3 @@ bot.on('message', message => {
     }
     
 })
-

@@ -32,7 +32,7 @@ var prefix = ("/")
 
 bot.on("ready", () => {
     console.log("Bot prêt prêt à être utilisé !")
-    bot.user.setGame("!help")
+    bot.user.setGame("!help | Voir mes commandes")
 })
 
 bot.on("guildMemberAdd", member => {

@@ -95,3 +95,7 @@ bot.on('message', message => {
     }
     
 })
+
+bot.on("message", message => {
+    console.log("[" + message.createdAt() + "]" + "<" + message.channel.name + ">" + message.member.displayName + ">" + message)
+})

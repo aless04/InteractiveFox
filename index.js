@@ -2,6 +2,7 @@ const Discord = require ("discord.js")
 const embedroulette = {
   "embed": {
     "description": "**C'est partit pour la roulette ! :raised_hands:**\n\nTu dois essayer de trouver un nombre compris entre 0 et 1000 . :neutral_face:\n\nLe premier à trouver le nombre gagne la partie ! :upside_down:\n\nPour gagner il te suffit de dire un nombre et je te dirai si c'est + ou - ! :wink:",
+    "color": 4886754,
     "footer": {
       "icon_url": "https://cdn.discordapp.com/embed/avatars/4.png",
       "text": "Commande (!roulette)"

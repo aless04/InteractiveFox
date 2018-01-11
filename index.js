@@ -1,5 +1,21 @@
 const Discord = require ("discord.js")
-
+const embedroulette = {
+  "embed": {
+    "description": "**C'est partit pour la roulette ! :raised_hands:**\n\nTu dois essayer de trouver un nombre compris entre 0 et 1000 . :neutral_face:\n\nLe premier à trouver le nombre gagne la partie ! :upside_down:\n\nPour gagner il te suffit de dire un nombre et je te dirai si c'est + ou - ! :wink:",
+    "footer": {
+      "icon_url": "https://cdn.discordapp.com/embed/avatars/4.png",
+      "text": "Commande (!roulette)"
+    },
+    "thumbnail": {
+      "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+    },
+    "author": {
+      "name": "Menu !roulette",
+      "url": "https://discordapp.com",
+      "icon_url": "https://cdn.discordapp.com/embed/avatars/2.png"
+    }
+  }
+}
 const embedhelp = {
     "embed": {
       "description": "\n**Voici toutes les commandes disponibles sur ce serveur Discord :**\n\n|``!help`` | Affiche le __Menu !help__ et toutes les autres commandes disponibles.|",
@@ -75,8 +91,7 @@ bot.on('message', message => {
         message.reply("Tu ne peut pas effectuer cette commande tant qu'une autre partie de roulette est en cours !")
     }
     if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 0)){
-        message.channel.sendMessage("C'est partit pour la roulette :raised_hands: !")
-        message.channel.sendMessage("Tu dois essayer de trouver un nombre compris entre 0 et 1000 :neutral_face: \nLe premier à trouver le nombre gagne la partie :upside_down: !\nPour gagner il te suffit de dire un nombre et je te dirai si c'est + ou - :wink: ")
+        message.channel.sendMessage(embedroulette)
         GAME = 1
         hasard = Math.floor ( Math.random() * 1001 )
 

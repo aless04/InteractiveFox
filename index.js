@@ -94,7 +94,11 @@ bot.on('message', message => {
         hasard = Math.floor ( Math.random() * 1001 )
 
     }
-    if(GAME == 1 & message.channel.name == "espace-bot"){
+    
+    
+})
+bot.on("message", message => {
+ if(GAME == 1 & message.channel.name == "espace-bot"){
         if(message.content == hasard){
             message.reply("Bravo ! Tu remportes la partie !")
             GAME = 0
@@ -107,9 +111,8 @@ bot.on('message', message => {
         }
     
     }
-    
+ 
 })
-
 bot.on("message", message => {
     console.log("[" + message.createdAt + "]" + "<" + message.channel.name + ">" + message.member.displayName + ">" + message)
 })

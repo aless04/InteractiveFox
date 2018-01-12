@@ -97,10 +97,10 @@ bot.on('message', message => {
             message.reply("Bravo ! Tu remportes la partie !")
             GAME = 0
         }
-        if(message.content < hasard){
+        if(message.startWith < hasard){
             message.reply("c'est +")
         }
-        if(message.content > hasard){
+        if(message.StartWith > hasard){
             message.reply("c'est -")
         }
     

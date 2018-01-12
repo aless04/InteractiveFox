@@ -87,23 +87,23 @@ bot.on('message', message => {
     if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 1)){
         message.reply("Tu ne peut pas effectuer cette commande tant qu'une autre partie de roulette est en cours !")
     }
-    if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 0)){
-        message.channel.sendMessage(embedroulette)
-        GAME = 1
-        hasard = Math.floor ( Math.random() * 1001 )
-    }
-     if(GAME == 1 & message.channel.name == "espace-bot"){
+ if(GAME == 1 & message.channel.name == "espace-bot"){
         if(message.content == hasard){
             message.reply("Bravo ! Tu remportes la partie !")
             GAME = 0
         }
-        if(message.startWith < hasard){
+        if(message.content < hasard){
             message.reply("c'est +")
         }
-        if(message.StartWith > hasard){
+        if(message.content > hasard){
             message.reply("c'est -")
         }
     
+    }
+    if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 0)){
+        message.channel.sendMessage(embedroulette)
+        GAME = 1
+        hasard = Math.floor ( Math.random() * 1001 )
     }
  
 })

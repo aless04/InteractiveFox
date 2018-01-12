@@ -66,7 +66,6 @@ bot.on("guildMemberAdd", member => {
 bot.login("Mzk4NDYyMTQ2ODg0NjY1MzU1.DTFt0w.zql0b8Kbfp-X0ncJaiFvopsKh2Q")
 
 bot.on('message', message => {
- if (message.author.bot) return;
     if(message.content == "Ping"){
         message.reply("Pong :ping_pong:")
         console.log("Ping Pong")

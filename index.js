@@ -81,10 +81,6 @@ bot.on('message', message => {
         console.log("Help demandé")
     }
     
-    if (message.author.bot){
-     return
-    }
-    
     if(message.content == prefixbot + "roulette" & message.channel.name == "general"){
         message.reply("Tu ne peut pas utiliser cette commande ici,\nessaye le salon espace-bot :wink: !")
     }
@@ -95,13 +91,8 @@ bot.on('message', message => {
         message.channel.sendMessage(embedroulette)
         GAME = 1
         hasard = Math.floor ( Math.random() * 1001 )
-
     }
-    
-    
-})
-bot.on("message", message => {
- if(GAME == 1 & message.channel.name == "espace-bot"){
+     if(GAME == 1 & message.channel.name == "espace-bot"){
         if(message.content == hasard){
             message.reply("Bravo ! Tu remportes la partie !")
             GAME = 0

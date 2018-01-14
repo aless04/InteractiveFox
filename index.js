@@ -100,6 +100,7 @@ bot.on('message', message => {
         }
         if(message.content < hasard){
             message.reply("c'est +")
+            message.channel.sendMessage(message)
         }
         if(message.content > hasard){
             message.reply("c'est -")

@@ -110,6 +110,5 @@ bot.on('message', message => {
  
 })
 bot.on("message", message => {
-    if (message.author.bot) return;
     console.log("[" + message.createdAt + "]" + "<" + message.channel.name + ">" + message.member.displayName + ">" + message)
 })

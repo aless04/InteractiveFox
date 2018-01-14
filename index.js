@@ -89,7 +89,7 @@ bot.on('message', message => {
     }
 
     if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 0)){
-        message.channel.sendMessage(embedroulette)
+        message.channel.sendMessage("embedroulette")
         GAME = 1
         hasard = Math.floor ( Math.random() * 1001 )
     }
@@ -100,7 +100,6 @@ bot.on('message', message => {
         }
         if(message.content < hasard){
             message.reply("c'est +")
-            message.channel.sendMessage(message.content)
         }
         if(message.content > hasard){
             message.reply("c'est -")

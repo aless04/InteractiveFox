@@ -117,3 +117,8 @@ bot.on('message', message => {
 bot.on("message", message => {
     console.log("[" + message.createdAt + "]" + "<" + message.channel.name + ">" + message.member.displayName + ">" + message)
 })
+bot.on('message', message =>{
+  if(message.content == "Bonne Nuit"){
+    message.react("💤")
+  }
+})

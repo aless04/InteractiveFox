@@ -100,14 +100,19 @@ bot.on('message', message => {
         else{
 
         if(message.content == hasard){
+            message.react("✅")
             message.reply("Bravo ! Tu remportes la partie !")
             GAME = 0
         }
         if(message.content < hasard){
             message.reply("c'est +")
+            message.react("➕")
+            message.react("❌")
         }
         if(message.content > hasard){
             message.reply("c'est -")
+            message.react("➖")
+            message.react("❌")
         }
       }
     

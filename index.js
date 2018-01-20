@@ -105,11 +105,9 @@ bot.on('message', message => {
             GAME = 0
         }
         if(message.content < hasard){
-            message.reply("c'est +")
             message.react("➕")
         }
         if(message.content > hasard){
-            message.reply("c'est -")
             message.react("➖")
         }
       }

@@ -122,3 +122,18 @@ bot.on('message', message =>{
     message.react("💤")
   }
 })
+bot.on('message', message =>{
+  if(message.content == "bonne Nuit"){
+    message.react("💤")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "Bonne nuit"){
+    message.react("💤")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "bonne nuit"){
+    message.react("💤")
+  }
+})

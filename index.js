@@ -80,7 +80,9 @@ bot.on('message', message => {
         message.channel.sendMessage(embedhelp)
         console.log("Help demandé")
     }
-    
+    if(message.channel.name == "annonces"){
+       message.react("✅")
+    }
     if(message.content == prefixbot + "roulette" & message.channel.name == "general"){
         message.reply("Tu ne peut pas utiliser cette commande ici,\nessaye le salon espace-bot :wink: !")
     }

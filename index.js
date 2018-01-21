@@ -45,7 +45,7 @@ bot.on("guildMemberAdd", member => {
  member.guild.channels.find("name", "general").sendMessage(member.toString() + " nous a rejoints ! :grinning:")
 })
 
-bot.login("Mzk4NDYyMTQ2ODg0NjY1MzU1.DTFt0w.zql0b8Kbfp-X0ncJaiFvopsKh2Q")
+bot.login(process.env.TOKEN)
 
 bot.on('message', message => {
     if(message.content == "Ping"){

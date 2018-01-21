@@ -138,3 +138,23 @@ bot.on('message', message =>{
     message.react("💤")
   }
 })
+bot.on('message', message =>{
+  if(message.content == "gg"){
+    message.react("🕶")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "Gg"){
+    message.react("🕶")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "gG"){
+    message.react("🕶")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "GG"){
+    message.react("🕶")
+  }
+})

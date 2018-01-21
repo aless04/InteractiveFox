@@ -1,3 +1,4 @@
+
 const Discord = require ("discord.js")
 const embedhelp = {
     "embed": {
@@ -36,7 +37,7 @@ bot.on("guildMemberAdd", member => {
   member.createDM().then(channel => {
     return channel.send("**Bienvenue sur notre serveur Discord **" + member.toString() +"! :grinning:\nPuisque tu es nouveau(elle), nous te conseillons d'effectuer la commande ``!help`` qui te permettra de voir toutes les commandes. :wink:\nLes deux salons textuels __regles__ et __annonce__ peuvent t'être très utiles pour comprendre le serveur. :busts_in_silhouette:\nNous éspérons que tu te sentiras bien dans notre serveur ! :grin:")
   })
-
+})
 bot.on("guildMemberRemove", member => {
  member.guild.channels.find("name", "general").sendMessage(member.toString() + " a quitté le serveur .. :cry: ")
 })
@@ -63,14 +64,14 @@ bot.on('message', message => {
         console.log("Help demandé")
     }
     if(message.channel.name == "annonces"){
-       reacte = Math.floor ( Math.random() * 4 )
-       if(reacte == 1){
+      reactemojisrandom = Math.floor ( Math.random() * 4 )
+       if(reactemojisrandom == 1){
         message.react("✅")
        }
-       if(reacte == 2){
+       if(reactemojisrandom == 2){
         message.react("✔")
        }
-       if(reacte == 3){
+       if(reactemojisrandom == 3){
         message.react("☑")
        }
     }

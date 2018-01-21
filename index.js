@@ -180,3 +180,23 @@ bot.on('message', message =>{
     message.react("👋")
   }
 })
+bot.on('message', message =>{
+  if(message.content == "salut"){
+    message.react("🖐")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "Salut"){
+    message.react("🖐")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "Bonjour"){
+    message.react("🙃")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "bonjour"){
+    message.react("🙃")
+  }
+})

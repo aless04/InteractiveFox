@@ -170,3 +170,13 @@ bot.on('message', message =>{
     message.react("👏")
   }
 })
+bot.on('message', message =>{
+  if(message.content == "aurevoir"){
+    message.react("👋")
+  }
+})
+bot.on('message', message =>{
+  if(message.content == "Aurevoir"){
+    message.react("👋")
+  }
+})

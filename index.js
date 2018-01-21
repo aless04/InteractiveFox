@@ -140,25 +140,21 @@ bot.on('message', message =>{
 })
 bot.on('message', message =>{
   if(message.content == "gg"){
-    message.react("🇬")
-    message.react("🇬")
+    message.react("👏")
   }
 })
 bot.on('message', message =>{
   if(message.content == "Gg"){
-    message.react("🇬")
-    message.react("🇬")
+    message.react("👏")
   }
 })
 bot.on('message', message =>{
   if(message.content == "gG"){
-    message.react("🇬")
-    message.react("🇬")
+    message.react("👏")
   }
 })
 bot.on('message', message =>{
   if(message.content == "GG"){
-    message.react("🇬")
-    message.react("🇬")
+    message.react("👏")
   }
 })

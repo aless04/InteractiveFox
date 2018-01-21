@@ -43,6 +43,7 @@ var prefixbot = ("!")
 var GAME = 0
 var hasard = 0
 var prefix = ("/")
+var reacte = 0
 
 bot.on("ready", () => {
     console.log("Bot prêt prêt à être utilisé !")
@@ -81,7 +82,16 @@ bot.on('message', message => {
         console.log("Help demandé")
     }
     if(message.channel.name == "annonces"){
-       message.react("✅")
+       reacte = Math.floor ( Math.random() * 4 )
+       if(reacte == 1){
+        message.react("✅")
+       }
+       if(reacte == 2){
+        message.react("✔")
+       }
+       if(reacte == 3){
+        message.react("☑")
+       }
     }
     if(message.content == prefixbot + "roulette" & message.channel.name == "general"){
         message.reply("Tu ne peut pas utiliser cette commande ici,\nessaye le salon espace-bot :wink: !")

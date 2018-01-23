@@ -30,7 +30,7 @@ var reactemojisrandom = 0
 
 bot.on("ready", () => {
     console.log("Bot prêt prêt à être utilisé !")
-    bot.user.setGame("!help | Voir mes commandes")
+    bot.user.setGame("vous aider (!help)")
 })
 
 bot.on("guildMemberAdd", member => {
@@ -63,90 +63,6 @@ bot.on('message', message => {
         message.channel.sendMessage(embedhelp)
         console.log("Help demandé")
     }
-    if(message.channel.name == "annonces"){
-      reactemojisrandom = Math.floor ( Math.random() * 4 )
-       if(reactemojisrandom == 1){
-        message.react("✅")
-       }
-       if(reactemojisrandom == 2){
-        message.react("✔")
-       }
-       if(reactemojisrandom == 3){
-        message.react("☑")
-       }
-    }
- 
-})
 bot.on("message", message => {
     console.log("[" + message.createdAt + "]" + "<" + message.channel.name + ">" + message.member.displayName + ">" + message)
-})
-bot.on('message', message =>{
-  if(message.content == "Bonne Nuit"){
-    message.react("💤")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "bonne Nuit"){
-    message.react("💤")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "Bonne nuit"){
-    message.react("💤")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "bonne nuit"){
-    message.react("💤")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "gg"){
-    message.react("👏")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "Gg"){
-    message.react("👏")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "gG"){
-    message.react("👏")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "GG"){
-    message.react("👏")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "aurevoir"){
-    message.react("👋")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "Aurevoir"){
-    message.react("👋")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "salut"){
-    message.react("🖐")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "Salut"){
-    message.react("🖐")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "Bonjour"){
-    message.react("🙃")
-  }
-})
-bot.on('message', message =>{
-  if(message.content == "bonjour"){
-    message.react("🙃")
-  }
 })

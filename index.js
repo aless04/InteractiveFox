@@ -1,4 +1,3 @@
-
 const Discord = require ("discord.js")
 const embedhelp = {
     "embed": {
@@ -63,6 +62,7 @@ bot.on('message', message => {
         message.channel.sendMessage(embedhelp)
         console.log("Help demandé")
     }
+})
 bot.on("message", message => {
     console.log("[" + message.createdAt + "]" + "<" + message.channel.name + ">" + message.member.displayName + ">" + message)
 })

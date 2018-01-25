@@ -28,7 +28,7 @@ var prefixbot = ("!")
 var reactemojisrandom = 0
 
 bot.on("ready", () => {
-    console.log("Bot prêt prêt à être utilisé !")
+    console.log("Bot prêt à être utilisé !")
     bot.user.setGame("vous aider (!help)")
 })
 

@@ -23,12 +23,26 @@ const embedhelp = {
       ]
     }
   }
+const embedbienvenue = {
+    "embed": {
+      "description": "\n**Bienvenue sur notre serveur Discord !**\n\nNotre équipe éspère que tu te sentiras à ta place parmis nous ! :raised_hands:",
+      "color": 4886754,
+      "footer": {
+        "icon_url": "https://cdn.discordapp.com/embed/avatars/4.png",
+        "text": "Commande (guildMemberAdd)"
+      },
+      "author": {
+        "name": "Menu de bienvenue",
+        "icon_url": "https://cdn.discordapp.com/embed/avatars/2.png"
+      }
+    }
+  }
 var bot = new Discord.Client()
 var prefixbot = ("!")
 var reactemojisrandom = 0
 
 bot.on("ready", () => {
-    console.log("Bot prêt à être utilisé !")
+    console.log("Bot INTERACTIVEFOX prêt !")
     bot.user.setGame("vous aider (!help)")
 })
 

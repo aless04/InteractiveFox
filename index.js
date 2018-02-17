@@ -61,10 +61,16 @@ var hasardroulette = 0
 var reactemojisrandom = 0
 var hasard8ball = 0
 
-//test//
+//Sa nous ?//
 bot.on('message', message => {
-if(message.content.length == 30){
-    message.reply("test")
+if(message.content.length == 50){
+    message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+}
+if(message.content.length > 50){
+    message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+}
+if(message.content.length < 50){
+    message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
 }
 })
 //Login//

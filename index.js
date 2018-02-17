@@ -69,9 +69,6 @@ if(message.content.length == 50){
 if(message.content.length > 50){
     message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
 }
-if(message.content.length < 50){
-    message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
-}
 })
 //Login//
 bot.login(process.env.TOKEN)

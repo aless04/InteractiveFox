@@ -66,18 +66,19 @@ bot.on('message', message => {
     if(message.channel.name == "pubs" || "annonces" || "regles" || "demandes-de-grades"){
         return
     }else{
-    if(message.author.id == "406185988147380225"){
-        return
-    }else{
-if(message.content.length == 70){
-    message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
-}
-if(message.content.length > 70){
-    message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
-}
-    }
+        if(message.author.id == "406185988147380225"){
+            return
+        }else{
+            if(message.content.length == 70){
+                message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+            }
+            if(message.content.length > 70){
+                message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+            }
+        }
     }
 })
+
 //Login//
 bot.login(process.env.TOKEN)
 

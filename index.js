@@ -28,7 +28,7 @@ const embedhelp = {
   }
 const embedbienvenue = {
     "embed": {
-      "description": "\n**Bienvenue sur notre serveur Discord" + member.toString() + "!**\n\nNotre éspérons que tu te sentiras à ta place parmis nous ! :raised_hands:\nPuisque tu es nouveau(elle), nous te conseillons d'effectuer la commande ``!help`` qui te permettra de voir toutes les commandes. :wink:\nLes deux salons textuels __regles__ et __annonce__ peuvent t'être très utiles pour comprendre le serveur. :busts_in_silhouette:\nNous éspérons que tu te sentiras bien dans notre serveur ! :grin:",
+      "description": "\n**Bienvenue sur notre serveur Discord !**\nNous éspérons que tu te sentiras à ta place parmis nous ! :raised_hands:\nPuisque tu es nouveau(elle), nous te conseillons d'effectuer la commande ``!help`` qui te permettra de voir toutes les commandes. :wink:\nLes deux salons textuels __regles__ et __annonce__ peuvent t'être très utiles pour comprendre le serveur. :busts_in_silhouette:\nNous éspérons que tu te sentiras bien dans notre serveur ! :grin:",
       "color": 4886754,
       "footer": {
         "icon_url": "https://cdn.discordapp.com/embed/avatars/4.png",

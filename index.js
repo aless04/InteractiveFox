@@ -182,7 +182,7 @@ bot.on('message', message => {
         message.reply("Tu ne peut pas utiliser cette commande ici,\nessaye le salon espace-bot :wink: !")
     }
     if(message.content.startsWith == prefixbot8ball & message.channel.name == "espace-bot"){
-        hasard = Math.floor ( Math.random() * 21 )
+        hasard8ball = Math.floor ( Math.random() * 21 )
         if (hasard8ball == 1) {
             message.reply("Essaye plus tard")
         }

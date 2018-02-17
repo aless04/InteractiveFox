@@ -61,6 +61,12 @@ var hasardroulette = 0
 var reactemojisrandom = 0
 var hasard8ball = 0
 
+//test//
+bot.on('message', message => {
+if(message.content.length == 30){
+    message.reply("test")
+}
+})
 //Login//
 bot.login(process.env.TOKEN)
 

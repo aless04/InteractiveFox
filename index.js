@@ -91,10 +91,10 @@ bot.on("guildMemberAdd", member => {
 //PingPong//
 bot.on('message', message => {
     if(message.content == "Ping"){
-        message.reply("Pong")
+        message.reply("Pong :ping_pong:")
     }
     if(message.content == "ping"){
-        message.reply("pong")
+        message.reply("pong :ping_pong:")
     }
     if(message.content == "pong"){
         message.reply("po.. haha tu m'as eu ! :joy:")

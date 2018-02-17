@@ -93,9 +93,14 @@ bot.on('message', message => {
     if(message.content == "Ping"){
         message.reply("Pong")
     }
-    
     if(message.content == "ping"){
         message.reply("pong")
+    }
+    if(message.content == "pong"){
+        message.reply("po.. haha tu m'as eu ! :joy:")
+    }
+    if(message.content == "Pong"){
+        message.reply("Po.. haha tu m'as eu ! :joy:")
     }
 })
 

@@ -63,6 +63,9 @@ var hasard8ball = 0
 
 //Sa nous ?//
 bot.on('message', message => {
+    if(message.channel.name == "pubs" || "annonces" || "regles" || "demandes-de-grades"){
+        return
+    }else{
     if(message.author.id == "406185988147380225"){
         return
     }else{
@@ -72,6 +75,7 @@ if(message.content.length == 70){
 if(message.content.length > 70){
     message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
 }
+    }
     }
 })
 //Login//

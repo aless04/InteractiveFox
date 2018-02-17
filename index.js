@@ -165,7 +165,7 @@ bot.on('message', message => {
     if(message.content == "mdr"){
         message.react("😂")
     }
-    if(startsWith == prefix8ball){
+    if(message.content.startsWith == prefix8ball){
         message.react("🎱")
     }
     if(message.content == "Pong"){

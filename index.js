@@ -114,9 +114,6 @@ bot.on('message', message => {
     if(message.content == "pingpong"){
         message.reply("tennisdetable ? :thinking:")
     }
-    if(message.content == "Ping Pong"){
-        message.reply("Tennis de Table ? :thinking:")
-    }
     if(message.content == "ping Pong"){
         message.reply("tennis de Table ? :thinking:")
     }

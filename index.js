@@ -63,17 +63,29 @@ var hasard8ball = 0
 
 //Sa nous ?//
 bot.on('message', message => {
-    if(message.channel.name == "pubs" | "annonces" | "regles" | "demandes-de-grades"){
+    if(message.channel.name == "pubs"){
         return
     }else{
-        if(message.author.id == "406185988147380225"){
+        if(message.channel.name == "annonces"){
             return
         }else{
-            if(message.content.length == 70){
-                message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
-            }
-            if(message.content.length > 70){
-                message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+            if(message.channel.name == "demandes-de-grades"){
+                return
+            }else{
+                if(message.channel.name == "regles"){
+                    return
+                }else{
+                    if(message.author.id == "406185988147380225"){
+                        return
+                    }else{
+                        if(message.content.length == 70){
+                            message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+                        }
+                        if(message.content.length > 70){
+                            message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+                        }
+                    }
+                }
             }
         }
     }

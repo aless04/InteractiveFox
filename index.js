@@ -178,10 +178,10 @@ bot.on('message', message => {
 
 //8ball//
 bot.on('message', message => {
-    if(message.content.StartsWith(prefixbot8ball) & message.channel.name == "general"){
+    if(message.content.startsWith(prefixbot8ball) & message.channel.name == "general"){
         message.reply("Tu ne peut pas utiliser cette commande ici,\nessaye le salon espace-bot :wink: !")
     }
-    if(message.StartsWith(prefixbot8ball) & message.channel.name == "espace-bot"){
+    if(message.startsWith(prefixbot8ball) & message.channel.name == "espace-bot"){
         hasard8ball = Math.floor ( Math.random() * 21 )
         if (hasard8ball == 1) {
             message.reply("Essaye plus tard")

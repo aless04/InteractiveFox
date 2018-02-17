@@ -174,6 +174,12 @@ bot.on('message', message => {
     if(message.content == "pong"){
         message.react("🏓")
     }
+    if(message.content == "Ping"){
+        message.react("🏓")
+    }
+    if(message.content == "ping"){
+        message.react("🏓")
+    }
 })
 
 //8ball//

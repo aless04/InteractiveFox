@@ -63,7 +63,7 @@ var hasard8ball = 0
 
 //Sa nous ?//
 bot.on('message', message => {
-    if(message.channel.name == "pubs" || "annonces" || "regles" || "demandes-de-grades"){
+    if(message.channel.name == "pubs" | "annonces" | "regles" | "demandes-de-grades"){
         return
     }else{
         if(message.author.id == "406185988147380225"){

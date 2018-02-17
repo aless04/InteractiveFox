@@ -102,6 +102,30 @@ bot.on('message', message => {
     if(message.content == "Pong"){
         message.reply("Po.. haha tu m'as eu ! :joy:")
     }
+    if(message.content == "PingPong"){
+        message.reply("TennisdeTable ? :thinking:")
+    }
+    if(message.content == "pingPong"){
+        message.reply("tennisdeTable ? :thinking:")
+    }
+    if(message.content == "Pingpong"){
+        message.reply("Tennisdetable ? :thinking:")
+    }
+    if(message.content == "pingpong"){
+        message.reply("tennisdetable ? :thinking:")
+    }
+    if(message.content == "Ping Pong"){
+        message.reply("Tennis de Table ? :thinking:")
+    }
+    if(message.content == "ping Pong"){
+        message.reply("tennis de Table ? :thinking:")
+    }
+    if(message.content == "Ping Pong"){
+        message.reply("Tennis de table ? :thinking:")
+    }
+    if(message.content == "ping pong"){
+        message.reply("tennis de table ? :thinking:")
+    }
 })
 
 //Help//

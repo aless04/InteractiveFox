@@ -97,7 +97,7 @@ bot.login(process.env.TOKEN)
 //ReadyBot//
 bot.on("ready", () => {
     console.log("Bot INTERACTIVEFOX prêt !")
-    bot.user.setGame("rien mais psst fais (!help) ^^")
+    bot.user.setActivity("rien mais psst fais (!help) ^^")
 })
 
 //NVmembre//

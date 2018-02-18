@@ -366,7 +366,7 @@ bot.on('message', message => {
 //logs//
 
 bot.on('message', message => {
-    if(message.content == "test"){
-        message.channel.id("411229117078568960").sendMessage("test")
+    if(message.content == test){
+        message.channel("411229117078568960").sendMessage("test")
     }
 })

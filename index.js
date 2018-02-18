@@ -367,6 +367,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if(message.content == test){
-        message.channel("411229117078568960").sendMessage("test")
+        bot.channels.get("411229117078568960").send("test");
     }
 })

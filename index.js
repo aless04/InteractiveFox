@@ -365,7 +365,7 @@ bot.on('message', message => {
 
 //logs//
 
-bbot.on('message', message => {
+bot.on('message', message => {
     if(message.author.id == "406185988147380225"){
         return
     }else{

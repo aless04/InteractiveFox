@@ -369,6 +369,6 @@ bot.on('message', message => {
     if(message.author.id == "406185988147380225"){
         return
     }else{
-    bot.channels.get("411229117078568960").send(message.author.name + "a dit : " + message + " à " + message.createdAT)
+    bot.channels.get("411229117078568960").send(message.author + " a dit : " + message)
     }
 })

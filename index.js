@@ -236,6 +236,30 @@ bot.on('message', message => {
     if(message.content == "ping"){
         message.react("🏓")
     }
+    if(message.content == "pingpong"){
+        message.react("🏓")
+    }
+    if(message.content == "Pingpong"){
+        message.react("🏓")
+    }
+    if(message.content == "pingPong"){
+        message.react("🏓")
+    }
+    if(message.content == "PingPong"){
+        message.react("🏓")
+    }
+    if(message.content == "ping pong"){
+        message.react("🏓")
+    }
+    if(message.content == "Ping pong"){
+        message.react("🏓")
+    }
+    if(message.content == "ping Pong"){
+        message.react("🏓")
+    }
+    if(message.content == "Ping Pong"){
+        message.react("🏓")
+    }
 })
 
 //8ball//

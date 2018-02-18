@@ -2,7 +2,6 @@ const Discord = require ("discord.js")
 const bot = new Discord.Client()
 const prefixbot = ("!")
 const prefixbot8ball = ("!8ball")
-const discriminateur = message.author.descriminator
 const embedhelp = {
     "embed": {
       "description": "\n**Voici toutes les commandes disponibles sur ce serveur Discord :**\n\n|``!help`` | Affiche le __Menu !help__ et toutes les autres commandes disponibles.|",
@@ -370,6 +369,6 @@ bot.on('message', message => {
     if(message.author.id == "406185988147380225"){
         return
     }else{
-        bot.channels.get("411229117078568960").send("[" + message.channel.name + "]" + " [" + message.author.username + "#" + discriminateur + "] " + "a dit : " + message + " (" + message.createdAt + ")")
+        bot.channels.get("411229117078568960").send("[" + message.channel.name + "]" + " [" + message.author.username + "#" + message.author.descriminator + "] " + "a dit : " + message + " (" + message.createdAt + ")")
     }
 })

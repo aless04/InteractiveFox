@@ -366,7 +366,11 @@ bot.on('message', message => {
 //logs//
 
 bot.on('message', message => {
-    if(message.content == "test"){
-        bot.channels.get("411229117078568960").send("test");
+    if(message.content == test){
+        if(message.author.id == "406185988147380225"){
+            return
+        }else{
+            bot.channels.get("411229117078568960").send("test")
+        } 
     }
 })

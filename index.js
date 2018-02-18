@@ -370,6 +370,6 @@ bot.on('message', message => {
         return
     }else{
         var discri = message.author.discriminator
-        bot.channels.get("411229117078568960").send("[" + message.channel.name + "]" + " [" + message.author.username + "#" + discri + "] " + "a dit : " + message + " (" + message.createdAt + ")")
+        bot.channels.get("411229117078568960").send("[" + message.channel.name + "]" + " [" + message.author.username + "#" + discri + "] " + ": " + message + " (" + message.createdAt + ")")
     }
 })

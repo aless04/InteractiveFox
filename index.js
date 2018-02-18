@@ -79,10 +79,10 @@ bot.on('message', message => {
                         return
                     }else{
                         if(message.content.length == 70){
-                            message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+                            message.reply("Ca nous interresse ? :thinking:\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
                         }
                         if(message.content.length > 70){
-                            message.reply("Ca nous interresse ?\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
+                            message.reply("Ca nous interresse ? :thinking:\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
                         }
                     }
                 }

@@ -2,7 +2,7 @@ const Discord = require ("discord.js")
 const bot = new Discord.Client()
 const prefixbot = ("!")
 const prefixbot8ball = ("!8ball")
-onst embedhelp = {
+const embedhelp = {
     "embed": {
       "description": "\n**Voici toutes les commandes disponibles sur ce serveur Discord :**\n\n|``!help`` | Affiche le __Menu !help__ et toutes les autres commandes disponibles.|",
       "color": 4886754,

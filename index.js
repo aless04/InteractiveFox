@@ -1,4 +1,4 @@
-cnst Discord = require ("discord.js")
+const Discord = require ("discord.js")
 const bot = new Discord.Client()
 const prefixbot = ("!")
 const prefixbot8ball = ("!8ball")

@@ -365,11 +365,11 @@ bot.on('message', message => {
 
 //logs//
 
-bot.on('message', message => {
-    if(message.author.id == "406185988147380225"){
-        return
-    }else{
-        var discri = message.author.discriminator
-        bot.channels.get("411229117078568960").send("[" + message.channel.name + "]" + " [" + message.author.username + "#" + discri + "] " + " a dit : " + message + " (" + message.createdAt + ")")
-    }
-})
+//bot.on('message', message => {
+    //if(message.author.id == "406185988147380225"){
+        //return
+   // }else{
+       // var discri = message.author.discriminator
+       // bot.channels.get("411229117078568960").send("[" + message.channel.name + "]" + " [" + message.author.username + "#" + discri + "] " + " a dit : " + message + " (" + message.createdAt + ")")
+  //  }
+//})

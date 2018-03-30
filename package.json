@@ -9,6 +9,6 @@
   "author": "BlueFox",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.3.1"
+    "discord.js": "^11.3.3"
   }
 }

@@ -63,16 +63,16 @@ var hasard8ball = 0
 
 //Sa nous ?//
 bot.on('message', message => {
-    if(message.channel.name == "pubs"){
+    if(message.channel.id == "398442776167055372"){ //ID = salon "regle"
         return
     }else{
-        if(message.channel.name == "annonces"){
+        if(message.channel.id == "398847593381232641"){ //ID = salon "annonces"
             return
         }else{
-            if(message.channel.name == "demandes-de-grades"){
+            if(message.channel.id == "404002970619871236"){ //ID = salon "demandes-de-grades"
                 return
             }else{
-                if(message.channel.name == "regles"){
+                if(message.channel.id == "404381924019142657"){ //ID = "pubs"
                     return
                 }else{
                     if(message.author.id == "406185988147380225"){
@@ -363,13 +363,10 @@ bot.on('message', message => {
     }
 })
 
-//logs//
+//Grades auto/
 
-//bot.on('message', message => {
-    //if(message.author.id == "406185988147380225"){
-        //return
-   // }else{
-       // var discri = message.author.discriminator
-       // bot.channels.get("411229117078568960").send("[" + message.channel.name + "]" + " [" + message.author.username + "#" + discri + "] " + " a dit : " + message + " (" + message.createdAt + ")")
-  //  }
-//})
+bot.on('guildMemberAdd', member => {
+    console.log('User ' + member.user.username + 'has joined this server !')
+    var role = member.guild.roles.find('name', 'Humain')
+    member.addRole(role)
+})

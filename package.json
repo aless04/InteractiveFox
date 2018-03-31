@@ -1,6 +1,6 @@
 {
   "name": "InteractiveFox",
-  "version": "9",
+  "version": "1.0.1",
   "description": "Bot general",
   "main": "index.js",
   "scripts": {

@@ -374,7 +374,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', message =>{
     if(message.channel.id == "429747554893299712"){
-       var channel = bot.servers.get("name", "fortnitestats").defaultChannel
+       var channel = bot.servers.find("name", "fortnitestats").defaultChannel
        bot.sendMessage(channel, "!ftn " + message);
     
     }

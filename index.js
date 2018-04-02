@@ -376,8 +376,11 @@ bot.on('message', message =>{
   
       if(message.channel.id == "429747554893299712"){
      bot.channels.get('429676660707819523').send('!ftn ' + message)
+          }
+    If(message.channel.id == '429676660707819523'){
+        Bot.channels.get("429747554893299712").send(message)
+        }
     
-    }
        
        
 })

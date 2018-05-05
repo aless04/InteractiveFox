@@ -91,6 +91,7 @@ bot.on('message', message => {
                 }
             }
         }
+      }      
     }
 })
 

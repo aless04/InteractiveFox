@@ -72,6 +72,9 @@ bot.on('message', message => {
             if(message.channel.id == "404002970619871236"){ //ID = salon "demandes-de-grades"
                 return
             }else{
+                if(message.channel.id == "442051734269853717"){ //ID = salon "demandes-de-grades"
+                return
+            }else{
                 if(message.channel.id == "404381924019142657"){ //ID = "pubs"
                     return
                 }else{

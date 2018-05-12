@@ -28,7 +28,7 @@ const embedhelp = {
   }
 const embedbienvenue = {
     "embed": {
-      "description": "\n**Bienvenue sur notre serveur Discord !**\nNous éspérons que tu te sentiras à ta place parmis nous ! :raised_hands:\nPuisque tu es nouveau(elle), nous te conseillons d'effectuer la commande ``!help`` qui te permettra de voir toutes les commandes. :wink:\nLes deux salons textuels __regles__ et __annonce__ peuvent t'être très utiles pour comprendre le serveur. :busts_in_silhouette:\nNous éspérons que tu te sentiras bien dans notre serveur ! :grin:",
+      "description": "\n**Bienvenue sur notre serveur Discord !**\nNous éspérons que tu te sentiras à ta place parmis nous ! :raised_hands:\nPuisque tu es nouveau(elle), nous te conseillons d'effectuer la commande ``!help`` qui te permettra de voir toutes les commandes. :wink:\nLes deux salons textuels __#regles__ et __#annonces__ peuvent t'être très utiles pour comprendre le serveur. :busts_in_silhouette:\nNous te souhaitonsbonne continuation ! :grin:",
       "color": 4886754,
       "footer": {
         "icon_url": "https://cdn.discordapp.com/embed/avatars/4.png",
@@ -72,9 +72,6 @@ bot.on('message', message => {
             if(message.channel.id == "404002970619871236"){ //ID = salon "demandes-de-grades"
                 return
             }else{
-                if(message.channel.id == "442051734269853717"){ //ID = salon "demandes-de-grades"
-                return
-            }else{
                 if(message.channel.id == "404381924019142657"){ //ID = "pubs"
                     return
                 }else{
@@ -91,7 +88,6 @@ bot.on('message', message => {
                 }
             }
         }
-      }      
     }
 })
 
@@ -109,12 +105,12 @@ bot.on("guildMemberAdd", member => {
     member.createDM().then(channel => {
         return channel.send(embedbienvenue)
     })
-    member.guild.channels.find("name", "general").sendMessage(member.toString() + " nous a rejoints ! :grinning:")
+    member.guild.channels.find("id", "398439439346565161").sendMessage(member.toString() + " nous a rejoints ! :grinning:")
 })
 
 //Membrequit//
 bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "general").sendMessage(member.toString() + " a quitté le serveur .. :cry: ")
+    member.guild.channels.find("id", "398439439346565161").sendMessage(member.toString() + " a quitté le serveur .. :cry: ")
 })
 
 bot.on("guildMemberAdd", member => {
@@ -373,18 +369,4 @@ bot.on('guildMemberAdd', member => {
     console.log('User ' + member.user.username + 'has joined this server !')
     var role = member.guild.roles.find('name', 'Humain')
     member.addRole(role)
-})
-
-
-bot.on('message', message =>{
-  
-      if(message.channel.id == "429747554893299712"){
-     bot.channels.get('429676660707819523').send('!ftn ' + message)
-          }
-      if(message.channel.id == '429676660707819523'){
-        bot.channels.get("429747554893299712").send(message)
-        }
-    
-       
-       
 })

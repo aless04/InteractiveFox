@@ -337,18 +337,18 @@ bot.on('message', message => {
 })
 //Roulette//
 bot.on('message', message => {
-    if(message.content == prefixbot + "roulette" & message.channel.name == "general"){
+    if(message.content == prefixbot + "roulette" & message.channel.id == "398439439346565161"){
         message.reply("Tu ne peut pas utiliser cette commande ici,\nessaye le salon espace-bot :wink: !")
     }
-    if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 1)){
+    if((message.content == prefixbot + "roulette" & message.channel.id == "398789646760280064") & (GAME == 1)){
         message.reply("Tu ne peut pas effectuer cette commande tant qu'une autre partie de roulette est en cours !")
     }
-    if((message.content == prefixbot + "roulette" & message.channel.name == "espace-bot") & (GAME == 0)){
+    if((message.content == prefixbot + "roulette" & message.channel.id == "398789646760280064") & (GAME == 0)){
         message.channel.sendMessage(embedroulette)
         GAME = 1
         hasardroulette = Math.floor ( Math.random() * 1001 )
     }
-    if(GAME == 1  & message.channel.name == "espace-bot"){
+    if(GAME == 1  & message.channel.id == "398789646760280064"){
         if(message.author.bot){
             return
         }else{

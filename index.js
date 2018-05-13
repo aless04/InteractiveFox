@@ -78,6 +78,9 @@ bot.on('message', message => {
                     if(message.author.id == "406185988147380225"){
                         return
                     }else{
+                        if(message.channel.id == "442051734269853717"){ //ID = "pubs"
+                    return
+                }else{
                         if(message.content.length == 70){
                             message.reply("Ca nous interresse ? :thinking:\nhttps://giphy.com/embed/5ZVETcy0VZLgY")
                         }
@@ -87,6 +90,7 @@ bot.on('message', message => {
                     }
                 }
             }
+        }
         }
     }
 })
